@@ -1,0 +1,29 @@
+{
+    "name": "laravel",
+    "version": "1.1.0",
+    "description": "A Social App for kids",
+    "main": "index.js",
+    "scripts": {
+        "start": "forever start index.js",
+        "restart": "forever restart index.js",
+        "stop": "forever stop index.js",
+        "dev": "nodemon index.js"
+    },
+    "engines": {
+        "node": "v11.6.0"
+    },
+    "keywords": [],
+    "author": "Virendra Kumar",
+    "license": "ISC",
+    "homepage": "http://localhost/laravel",
+    "devDependencies": {},
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "forever": "^3.0.0",
+        "ioredis": "^4.17.3",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.4",
+        "socket.io": "^2.3.0"
+    }
+}

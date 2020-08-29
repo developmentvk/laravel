@@ -1,0 +1,152 @@
+table.table-bordered.dataTable thead tr:first-child{background: #367fa9}
+
+table.table-bordered.dataTable thead tr td{border-right:1px solid #ccc; border-bottom:1px solid #ccc; /*border-left:1px solid #ccc*/}
+table.table-bordered.dataTable thead tr td:nth-child(1) { border-left:1px solid #ccc;}
+a.asc{right:-19px}
+
+.dataTable thead th a{color:#fff;font-size:14px}
+
+.filters{background:#fff}
+
+table.table-bordered.dataTable tbody tr:nth-child(even){background: #fff}
+
+table.table-bordered.dataTable tbody tr:nth-child(odd){background: #ecf0f5}
+
+table.table-bordered.dataTable thead tr th{color: #fff; border-bottom: none; }
+
+table.table-bordered.dataTable tbody tr td{border-right:1px solid #bebebe;border-bottom:1px solid #bebebe;}
+
+table.table-bordered.dataTable tbody tr td:first-child{border-left:1px solid #bebebe; }
+
+#openFrmDiv{position: absolute; right: 45px; top: 20px; cursor: pointer; font-size: 17px; color: #3c8dbc; font-weight: bold;}
+
+.openformCntDiv{width: 100%; float: left; border: 1px solid #ccc;  padding: 20px; display: none; }
+
+.boxHeaderHdng{width: 100%; float: left;margin-bottom: 25px;}
+
+.formInptDiv{width: 32.2%; float: left; margin-right: 25px; margin-bottom: 20px}
+
+.openformCntDiv form .formInptDiv:nth-child(3n+3){ margin-right: 0 }
+
+.formInptDiv label{width: 100%; float: left; font-weight: normal; font-size: 16px}
+
+.frminput{width: 100%; float: left; background: #ecf0f5; border:1px solid #bebebe; padding: 12px 10px; transition: all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; outline: none;}
+
+.frminput:focus{transition: all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; box-shadow: inset 0px 0px 5px rgba(81,169,220, 0.8);}
+
+.formInptDivFul{width: 100%; float: left; margin-right: 0}
+
+.frmSbmt{background: #367fa9; color: #fff; text-transform: uppercase; border:none; outline: none; padding: 10px 22px; font-weight: bold; transition: all 0.5s}
+
+.frmSbmt:hover{transition: all 0.5s; background: #1a2226; box-shadow: 0px 3px 3px rgba(0,0,0,0.6); margin-top: -4px}
+
+.openformClsDiv i{ display: block; background: #3c8dbc; margin-bottom: 4px}
+
+.openformClsDiv i:nth-child(1){width: 25px; height: 2px;}
+
+.openformClsDiv i:nth-child(2){width: 20px; height: 2px;}
+
+.openformClsDiv i:nth-child(3){width: 15px; height: 2px;}
+
+.openformClsDiv span{position: relative; right: -31px; top: -25px;}
+
+.closefrmCnt{display: none;}
+
+.openCloseIcn .closefrmCnt{display: inline-block;}
+
+.openCloseIcn .opnefrmCnt{display: none;}
+
+
+
+
+
+.employee-index { float:left; width:100%; padding:10px 10px 0 10px;}
+
+#w0 { float:left; width:100%; }
+
+table.table-bordered.dataTable tbody tr td { font-size:14px;}
+
+.table.table-striped.table-bordered.table-hover.dataTable a { margin:0 4px;}
+
+.sidebar-menu > li > a { font-size:15px;}
+
+.employee-form .form-group{ margin-bottom:0 !important;}
+
+.help-block { margin-bottom:6px;}
+
+.employee-form label { font-size:14px;}
+
+.content-header > h1 { font-size:20px;}
+
+.table.table-striped.table-bordered.table-hover.dataTable th a { display:block;}
+
+.form-group.has-error .help-block { font-size:11px; margin-bottom:0; }
+
+.form-group .help-block { margin:0;}
+
+.employee-form .form-group { min-height:68px;}
+
+.table-bordered.detail-view { font-size:14px;}
+
+.table-bordered.detail-view td, .table-bordered.detail-view th { padding:5px;}
+
+.main-footer { font-size:14px;}
+
+.left-side, .main-sidebar, .main-header .logo { width:200px;}
+
+
+
+.content-wrapper, .right-side, .main-footer, .main-header .navbar { margin-left:200px;}
+
+.field-adminloginform-username .form-control, .field-adminloginform-password .form-control { height:34px;}
+
+
+
+form div.required label.control-label:after {
+
+  content:" * ";
+
+  color:red;
+
+}
+
+.empty-lable{margin-top: 23px;}
+.w3{margin-top: 23px;}
+.btn{padding: 1px 12px 3px;}
+
+#openFrmDiv.customSearch{position: static;float: right;width: 84px; max-height: 23px; top:84px;}
+.openformClsDiv.customSearch span{position: relative;top: -25px;float: right; right:auto;}
+.dropdown-toggle{margin-right: 0;}
+/*.dropdown-menu{ left:auto; right:0;}*/
+.btn-group.open .dropdown-menu{ left: -110px;}
+.manageuserDiv {width:100%; float:left;}
+.manageuserDiv .table-responsive.kv-grid-container{width:100%;}
+.manageUserExprtTab{position:relative; top:22px}
+.manageUserExprtTab-01{position:relative; top:-2px}
+table.table.table-striped.table-bordered.table-hover.dataTable tr td:last-child a[title="Delete"]{
+	color:red;
+}
+table.table.table-striped.table-bordered.table-hover.dataTable tr td:last-child a[title="Unblock"]{
+	color:green;
+}
+table.table.table-striped.table-bordered.table-hover.dataTable tr td:last-child a[title="Block"]{
+	color:red;
+}
+.user_detail{border-bottom: 1px solid #ccc; font-weight: 600; margin-bottom: 18px; margin-left: 1.5%; padding-bottom: 7px; width: 97%; font-size:16px; color:#333}
+.car_detail{border-bottom: 1px solid #ccc; font-weight: 600; margin-bottom: 18px;margin-top:18px margin-left: 1.5%; padding-bottom: 7px; width: 97%; font-size:16px; color:#333}
+.col-sm-4.small_label{font-weight:400 !important;}
+.user-index .box-header{ float:left !important; width:100% !important; top:30px !important;}
+#openFrmDiv { z-index:99999 !important;}
+.user-index { float:left !important; width:100% !important;}
+
+#recDetailDiv, #recMethodDiv{position: relative;}
+#add_rec_method, #add_rec_detail{position: absolute;
+bottom: 8px;
+left: 0px;
+right: 0px;
+margin: auto;
+float: none;
+width: 29px;
+background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+border: 1px solid rgb(204, 204, 204);
+padding: 3px 6px;}

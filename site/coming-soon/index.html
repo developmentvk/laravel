@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Talbiyah</title>
+    <link rel="stylesheet" href="compiled/flipclock.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="compiled/moment.js"></script>
+    <script src="compiled/flipclock.js"></script>
+    <link rel="stylesheet" href="css/coming-soon.css">
+</head>
+
+
+<body>
+    <div class="main-box">
+        <div class="container">
+            <div class="row">
+                <div class="logo-box">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div>
+                <div class="content-box">
+                    <h1 class="heading">Welcome!</h1>
+                    <p class="info">We are happy to see you, our site is almost ready.</p>
+                    <p class="gray-color info">Please come back later and we'll surprise you!</p>
+                    <div class="development-box">
+                    <!--     <img src="images/development.png" style="max-height:200px;"> -->
+                      <h1 class="middle-section " style="font-size:90px; color:#699e50;">Coming Soon & Maintenance Mode</h1>
+                    </div>
+                    <p class="font-24">Time Left Until <span class="red-text">Launching...</span>
+                        <div class="clock" style="margin:2em auto;"></div>
+                        <div class="message"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="social-icons">
+                            <li>
+                                <a href=""><img src="images/facebook.png"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/instagram.png"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/link.png"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/twitter.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cok-md-7">
+                        <p class="copy-right">© 2020 - Talbiyah All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script type="text/javascript">
+    var clock;
+    $(document).ready(function() {
+        var deadline_date = moment("2020-05-15")
+        deadline_date = deadline_date.diff(moment(), 'second');
+        var clock = $('.clock').FlipClock(3600 * 24 * 3, {
+            clockFace: 'DailyCounter',
+            countdown: true
+        });
+        clock.setTime(deadline_date);
+        clock.setCountdown(true);
+        clock.start();
+
+    });
+</script>
+
+</html>

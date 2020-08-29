@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Colfax-Regular';
+    src: url('../fonts/Colfax-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Colfax-Light';
+    src: url('../fonts/Colfax-Light.otf');
+}
+
+@font-face {
+    font-family: 'Colfax-Medium';
+    src: url('../fonts/Colfax-Medium.otf');
+}
+
+.main-box {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Colfax-Regular';
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 20px auto;
+    font-family: 'Colfax-Regular';
+}
+
+.row {
+    display: flex;
+}
+
+.red-text {
+    color: #E6302E;
+}
+
+.content-box {
+    padding: 0 100px;
+}
+
+.development-box img {
+    /* height: 200px; */
+}
+
+.development-box {
+    margin: 20px 0;
+}
+
+.info {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Colfax-Light';
+}
+
+.font-24 {
+    font-size: 24px !important;
+    margin: 30px auto;
+}
+
+.gray-color {
+    color: #999999;
+}
+
+.footer-box {
+   background: #699e50;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.heading {
+    margin: 4px 0;
+    font-size: 30px;
+    font-family: 'Colfax-Medium';
+}
+
+.footer-box .container {
+    margin: 0 auto;
+}
+
+.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.social-icons li a {
+    padding: 5px;
+}
+
+.copy-right {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.cok-md-7 {
+    flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        display: block;
+    }
+    .content-box {
+        padding: 30px;
+    }
+    .development-box img {
+        width: 100%;
+    }
+}

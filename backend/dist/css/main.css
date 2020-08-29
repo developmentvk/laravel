@@ -1,0 +1,77 @@
+.main-header .navbar {
+    background: #db3f7c !important;
+}
+
+.skin-blue .main-header .logo {
+    background-color: transparent !important;
+}
+
+.skin-blue .main-sidebar,
+.skin-blue .left-side {
+    background: url('../img/left-bg.jpg') no-repeat, #d33d7d !important;
+    background-size: auto, auto;
+    background-size: contain !important;
+}
+
+.skin-blue .sidebar-toggle:hover {
+    background: #db3f7c !important;
+}
+
+.skin-blue .sidebar-form {
+    border: 1px solid #fff;
+}
+
+.skin-blue .sidebar-form input[type="text"],
+.skin-blue .sidebar-form .btn {
+    background-color: #fff;
+}
+
+.skin-blue .sidebar-menu>li.header {
+    color: #333;
+    background: #fff;
+}
+
+.skin-blue .sidebar-menu>li:hover>a,
+.skin-blue .sidebar-menu>li.active>a,
+.skin-blue .sidebar-menu>li.menu-open>a {
+    color: #333;
+    background: #fff;
+}
+
+.skin-blue .sidebar-menu>li.active>a {
+    border-left-color: #ed8345;
+}
+
+.skin-blue .sidebar-menu>li>.treeview-menu {
+    margin: 0 1px;
+    background: #f7e6e7;
+}
+
+.skin-blue .sidebar-menu .treeview-menu>li>a {
+    color: #333;
+}
+
+.skin-blue .sidebar-menu .treeview-menu>li.active>a,
+.skin-blue .sidebar-menu .treeview-menu>li>a:hover {
+    color: #c80566;
+}
+
+.skin-blue .sidebar a {
+    color: #fff;
+}
+
+.login-page,
+.register-page {
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #7E2F83, #DB3E7C, #FFC90E);
+}
+
+.btn-primary {
+    background-color: #d23d7d;
+    border-color: #d33d7d;
+}
+
+.btn-primary:hover {
+    background-color: #d23d7d;
+    border-color: #d33d7d;
+}
