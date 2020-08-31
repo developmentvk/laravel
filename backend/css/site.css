@@ -1,5 +1,5 @@
 table.table-bordered.dataTable thead tr:first-child {
-    background: #3c8dbc !important;
+    background: #174f09c9 !important;
 }
 
 table.table-bordered.dataTable thead tr td {
@@ -93,8 +93,8 @@ form div.required label.control-label:after {
 }
 
 .btn-danger {
-    background-color: #3c8dbc !important;
-    border-color: #3c8dbc !important;
+    background-color: #174f09c9 !important;
+    border-color: #174f09c9 !important;
     color: #fff !important;
 }
 
@@ -177,11 +177,11 @@ td img, .form-group img, .timeline-body img {
 }
 
 .nav-tabs-custom>.nav-tabs>li.active {
-    border-top-color: #3c8dbc;
+    border-top-color: #174f09c9;
 }
 
 .box {
-    border-top: 3px solid #3c8dbc;
+    border-top: 3px solid #174f09c9;
 }
 
 .iCheck-helper {
@@ -233,7 +233,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .dropdown-menu {
-    border-color: #3c8dbc;
+    border-color: #174f09c9;
 }
 
 .dropdown-menu>li>a {
@@ -848,7 +848,7 @@ body.jfk-scrollbar::-webkit-scrollbar-corner {
 }
 
 .login-page, .register-page {
-    background: #548eb8;
+    background: #dcb944;
 }
 
 .dropzone {
@@ -1015,6 +1015,42 @@ ol.progtrckr li.progtrckr-todo:before {
     bottom: -1.6em;
 }
 
-li.dropdown ul.dropdown-menu {
-    margin-top: 1px;
+.main-header .navbar {
+    background: #dcb944 !important;
+}
+.skin-blue .sidebar-menu > li.active > a {
+    border-left-color: #dcb944;
+}
+.skin-blue .main-header .logo {
+    background-color: #579F45 !important;
+}
+.sidebar-menu > li.header {
+    color: white !important;
+    background-color: #509140 !important;
+}
+.sidebar-menu > li {
+    background-color: #539f41 !important;
+}
+.skin-blue .sidebar a {
+    color: white;
+}
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #539f41;
+}
+
+.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a, .skin-blue .sidebar-menu > li.menu-open > a {
+    color: #fff;
+    background: #174f09c9;
+}
+
+.skin-blue .main-header li.user-header {
+    background-color: #174f09c9;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu {
+    width: 300px;
+}
+
+.todo-list > li {
+    border-left: 2px solid #dcb944;
 }

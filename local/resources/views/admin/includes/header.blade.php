@@ -16,7 +16,7 @@
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li style="padding-top:0px; padding-right:7px; padding-left:7px;">
-                    <button type="button" data-lang="{{ App::getLocale() == 'en' ? 'ar' : 'en' }}" class="switch-lang btn bg-purple margin btn-flat">{{ App::getLocale() == 'en' ? \Lang::choice("admin.arabic", 0, [], 'ar') : \Lang::choice("admin.english", 0, [], 'ar') }}</button>
+                    <button type="button" data-lang="{{ App::getLocale() == 'en' ? 'ar' : 'en' }}" class="switch-lang btn btn-danger margin btn-flat">{{ App::getLocale() == 'en' ? \Lang::choice("admin.arabic", 0, [], 'ar') : \Lang::choice("admin.english", 0, [], 'ar') }}</button>
                 </li>
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
@@ -28,7 +28,7 @@
                             <img src="{{ cdnLink('logo/user.png', true) }}" class="user-image">
                         @endif
                         <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                        <span class="hidden-xs"> {{ $user->name }}</span>
+                        <span class="hidden-xs"> {{ App::getLocale() == 'en' ? $user->en_name : $user->name }}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- The user image in the menu -->
@@ -39,7 +39,7 @@
                                 <img src="{{ cdnLink('logo/user.png', true) }}" class="img-circle">
                             @endif
                             <p>
-                                {{ $user->name }}
+                                {{ App::getLocale() == 'en' ? $user->en_name : $user->name }}
                                 <small>{{ cpTrans('member_since') }} {{ date("M. Y", strtotime($user->created_at)) }}</small>
                             </p>
                         </li>
