@@ -1,5 +1,5 @@
 {
-    "name": "laravel",
+    "name": "kidzoon",
     "version": "1.1.0",
     "description": "A Social App for kids",
     "main": "index.js",
@@ -15,15 +15,22 @@
     "keywords": [],
     "author": "Virendra Kumar",
     "license": "ISC",
-    "homepage": "http://localhost/laravel",
+    "homepage": "https://www.kidzoon.com",
     "devDependencies": {},
     "dependencies": {
+        "cors": "^2.8.5",
+        "dateformat": "^3.0.3",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
+        "express-async-errors": "^3.1.1",
         "forever": "^3.0.0",
+        "fs": "0.0.1-security",
         "ioredis": "^4.17.3",
         "mysql": "^2.18.1",
         "nodemon": "^2.0.4",
-        "socket.io": "^2.3.0"
+        "path": "^0.12.7",
+        "socket.io": "^2.3.0",
+        "winston": "^3.3.3",
+        "winston-daily-rotate-file": "^4.5.0"
     }
 }

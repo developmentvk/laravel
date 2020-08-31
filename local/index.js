@@ -2,6 +2,9 @@ const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
 const { json } = require('express');
+const cors = require('cors');
+require(__dirname + '/node/logging')();
+var error = require(__dirname + '/node/error');
 require('dotenv').config({
     path: __dirname + '/.env'
 });
@@ -17,14 +20,18 @@ const port = process.env.PORT || SOCKET_PORT;
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
+
+app.set('trust proxy', true);
+app.use(cors());
+app.options('*', cors()); // include before other routes 
 server.listen(port, function (err) {
     console.log(server.address());
     console.log('Server is running on port ' + port + '');
 });
 io.use(function (socket, next) {
-    // console.log("Request Received : ", socket.handshake.query);
-    if (socket.handshake.query && socket.handshake.query.user_id && socket.handshake.query.token) {
-        User.getUserById(socket.handshake.query.user_id, socket.handshake.query.token, function (err, task) {
+    console.log("Request Received : ", socket.handshake.query);
+    if (socket.handshake.query && socket.handshake.query.user_id) {
+        User.getUserById(socket.handshake.query.user_id, function (err, task) {
             if (err) return next(new Error('Authentication error'));
             socket.decoded = JSON.parse(JSON.stringify(task))[0];
             next();
@@ -81,3 +88,4 @@ try {
 } catch (err) {
     throw new Error(err);
 }
+app.use(error);
