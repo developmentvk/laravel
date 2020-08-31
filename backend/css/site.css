@@ -136,10 +136,6 @@ td img, .form-group img, .timeline-body img {
     color: grey;
 }
 
-.main-header .navbar {
-    background: #3c8dbc !important;
-}
-
 .skin-blue .sidebar-menu .treeview-menu>li.active>a, .skin-blue .sidebar-menu .treeview-menu>li>a:hover {
     color: #c80566;
 }
@@ -155,8 +151,12 @@ td img, .form-group img, .timeline-body img {
 }
 
 .navbar-header {
-    background-color: #054b7d;
     text-align: center !important;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6;
 }
 
 .realTimeTimer {
@@ -165,11 +165,7 @@ td img, .form-group img, .timeline-body img {
 }
 
 .login-logo a img {
-    width: 175px;
-}
-
-.skin-blue .main-header li.user-header {
-    background-color: #3c8dbc;
+    width: 100px;
 }
 
 .small_label {
@@ -177,23 +173,23 @@ td img, .form-group img, .timeline-body img {
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
-    background-color: #054b7d;
+    background-color: #3c8dbc;
 }
 
 .nav-tabs-custom>.nav-tabs>li.active {
-    border-top-color: #054b7d;
+    border-top-color: #3c8dbc;
 }
 
 .box {
-    border-top: 3px solid #054b7d;
+    border-top: 3px solid #3c8dbc;
 }
 
 .iCheck-helper {
-    background-color: #054b7d;
+    background-color: #3c8dbc;
 }
 
 a, a:hover {
-    color: #054b7d;
+    color: #3c8dbc;
 }
 
 .checkbox {
@@ -201,15 +197,15 @@ a, a:hover {
 }
 
 .form-control:focus {
-    border-color: #054b7d;
+    border-color: #3c8dbc;
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default .select2-search--dropdown .select2-search__field {
-    border-color: #054b7d !important;
+    border-color: #3c8dbc !important;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #054b7d;
+    background-color: #3c8dbc;
     color: #fff !important;
 }
 
@@ -238,10 +234,6 @@ input[type="checkbox"], input[type="radio"] {
 
 .dropdown-menu {
     border-color: #3c8dbc;
-}
-
-.dropdown-menu {
-    background-color: #3c8dbc;
 }
 
 .dropdown-menu>li>a {
@@ -352,17 +344,17 @@ table.table-bordered.dataTable tbody tr td {
 }
 
 .ranges li.active {
-    background: #054b7d;
+    background: #3c8dbc;
     border: 1px solid #3c8dbc;
 }
 
 .ranges li:hover {
-    background: #054b7d;
+    background: #3c8dbc;
     border: 1px solid #3c8dbc;
 }
 
 .daterangepicker td.active, .daterangepicker td.active:hover {
-    background-color: #054b7d;
+    background-color: #3c8dbc;
     border-color: transparent;
     color: #FFFFFF;
 }
@@ -378,7 +370,7 @@ table.table-bordered.dataTable tbody tr td {
 
 /* 
 .range_inputs .applyBtn, .range_inputs .cancelBtn {
-    background-color: #054b7d;;
+    background-color: #3c8dbc;;
     border-color: #3c8dbc;
     color: #FFFFFF;
 } */
@@ -833,8 +825,8 @@ body.jfk-scrollbar::-webkit-scrollbar-corner {
 /* The google css code for scrollbars end */
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #054b7d;
-    border-color: #054b7d;
+    background-color: #3c8dbc;
+    border-color: #3c8dbc;
     color: white;
 }
 
@@ -853,10 +845,6 @@ body.jfk-scrollbar::-webkit-scrollbar-corner {
     text-align: center;
     padding: 1em 0;
     z-index: 1;
-}
-
-.skin-red .main-header li.user-header {
-    background-color: #054b7d;
 }
 
 .login-page, .register-page {
@@ -901,7 +889,7 @@ body.jfk-scrollbar::-webkit-scrollbar-corner {
 }
 
 .box.box-solid.box-danger {
-    border: 1px solid #054b7d;
+    border: 1px solid #3c8dbc;
 }
 
 .box.box-solid.box-danger>.box-header {
@@ -918,17 +906,19 @@ body.jfk-scrollbar::-webkit-scrollbar-corner {
     background-color: #f39c12 !important;
     border-color: #f39c12 !important;
 }
+
 .box-tools-btn {
     top: 2.5px !important;
 }
 
 .tab-pane .box {
-    border:0px;
-    margin-bottom:0px;
-    box-shadow:none;
+    border: 0px;
+    margin-bottom: 0px;
+    box-shadow: none;
 }
+
 .tab-pane .table {
-    margin-bottom : 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .content {
@@ -936,6 +926,7 @@ body.jfk-scrollbar::-webkit-scrollbar-corner {
 }
 
 /* Progress with steps */
+
 ol.progtrckr {
     display: table;
     list-style-type: none;
@@ -944,33 +935,59 @@ ol.progtrckr {
     table-layout: fixed;
     width: 100%;
 }
+
 ol.progtrckr li {
     display: table-cell;
     text-align: center;
     line-height: 3em;
 }
 
-ol.progtrckr[data-progtrckr-steps="2"] li { width: 49%; }
-ol.progtrckr[data-progtrckr-steps="3"] li { width: 33%; }
-ol.progtrckr[data-progtrckr-steps="4"] li { width: 24%; }
-ol.progtrckr[data-progtrckr-steps="5"] li { width: 19%; }
-ol.progtrckr[data-progtrckr-steps="6"] li { width: 16%; }
-ol.progtrckr[data-progtrckr-steps="7"] li { width: 14%; }
-ol.progtrckr[data-progtrckr-steps="8"] li { width: 12%; }
-ol.progtrckr[data-progtrckr-steps="9"] li { width: 11%; }
+ol.progtrckr[data-progtrckr-steps="2"] li {
+    width: 49%;
+}
+
+ol.progtrckr[data-progtrckr-steps="3"] li {
+    width: 33%;
+}
+
+ol.progtrckr[data-progtrckr-steps="4"] li {
+    width: 24%;
+}
+
+ol.progtrckr[data-progtrckr-steps="5"] li {
+    width: 19%;
+}
+
+ol.progtrckr[data-progtrckr-steps="6"] li {
+    width: 16%;
+}
+
+ol.progtrckr[data-progtrckr-steps="7"] li {
+    width: 14%;
+}
+
+ol.progtrckr[data-progtrckr-steps="8"] li {
+    width: 12%;
+}
+
+ol.progtrckr[data-progtrckr-steps="9"] li {
+    width: 11%;
+}
 
 ol.progtrckr li.progtrckr-done {
     color: black;
     border-bottom: 4px solid yellowgreen;
 }
+
 ol.progtrckr li.progtrckr-todo {
-    color: silver; 
+    color: silver;
     border-bottom: 4px solid silver;
 }
 
 ol.progtrckr li:after {
     content: "\00a0\00a0";
 }
+
 ol.progtrckr li:before {
     position: relative;
     bottom: -2.5em;
@@ -978,6 +995,7 @@ ol.progtrckr li:before {
     left: 50%;
     line-height: 1em;
 }
+
 ol.progtrckr li.progtrckr-done:before {
     content: "\2713";
     color: white;
@@ -988,6 +1006,7 @@ ol.progtrckr li.progtrckr-done:before {
     border: none;
     border-radius: 1.2em;
 }
+
 ol.progtrckr li.progtrckr-todo:before {
     content: "\039F";
     color: silver;
@@ -995,6 +1014,7 @@ ol.progtrckr li.progtrckr-todo:before {
     font-size: 1.5em;
     bottom: -1.6em;
 }
-li.dropdown ul.dropdown-menu{
+
+li.dropdown ul.dropdown-menu {
     margin-top: 1px;
 }
