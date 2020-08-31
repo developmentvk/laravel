@@ -12,7 +12,7 @@ class NavigationController extends AdminController
     }
     public function listings()
     {
-        $navigation = \App\Models\Navigations::select('*');
+        $navigation = \App\Models\Navigations::select('*')->where('is_visible', 'Yes');
         return \DataTables::of($navigation)
             ->editColumn('parent_id', function ($query) {
                 return $query->parent_id ? @cpTrans('yes') : @cpTrans('no');
