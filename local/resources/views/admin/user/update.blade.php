@@ -103,7 +103,7 @@
                 
                 @if(hasAccess("user/update") === true)
                 <div class="form-group">
-                    <div class="col-sm-offset-3 col-sm-9">
+                    <div class="col-sm-offset-5 col-sm-7">
                         <button type="button" class="btn btn-danger" id="userModalUpdateBtn">{{ cpTrans('save_changes') }}</button>
                         <button data-dismiss="modal" aria-label="Close" class="btn btn-danger">{{ cpTrans('close') }}</button>
                     </div>
